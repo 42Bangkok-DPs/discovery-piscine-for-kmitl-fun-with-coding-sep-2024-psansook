@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Calc</title>
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .calculator {
+            border: 1px solid gray;
+            padding: 20px;
+            border-radius: 5px;
+            }
+            input, select {
+                margin: 5px 0;
+                padding: 5px;
+            }
+    </style>
 </head>
 <body>
-    <h1>Basic Calculator</h1>
-    <form id="calculatorForm">
-        <input type="number" id="leftOperand" placeholder="Left operand" min="0" required>
+    <div class="calculator">
+        <input id="left" placeholder="First number">
         <select id="operator">
             <option value="+">+</option>
             <option value="-">-</option>
@@ -16,20 +34,15 @@
             <option value="/">/</option>
             <option value="%">%</option>
         </select>
-        <input type="number" id="rightOperand" placeholder="Right operand" min="0" required>
-        <input type="submit" value="Try me!">
-    </form>
+        <input id="right" placeholder="Second number">
+        <input type="button" value="Try me!" onclick="calculate()">
+    </div>
     <script>
-        const form = document.getElementById('calculatorForm');
-        const leftOperandInput = document.getElementById('leftOperand');
-        const rightOperandInput = document.getElementById('rightOperand');
-        const operatorSelect = document.getElementById('operator');
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-            const leftOperand = parseInt(leftOperandInput.value);
-            const rightOperand = parseInt(rightOperandInput.value);
-            const operator = operatorSelect.value;
-            if (isNaN(leftOperand) || isNaN(rightOperand) || leftOperand < 0 || rightOperand < 0) {
+        function calculate() {
+            const left = parseInt(document.getElementById('left').value);
+            const right = parseInt(document.getElementById('right').value);
+            const operator = document.getElementById('operator').value;
+            if (isNaN(left) || isNaN(right) || left < 0 || right < 0) {
                 alert("Error :(");
                 console.error("Error :(");
                 return;
@@ -37,38 +50,34 @@
             let result;
             switch (operator) {
                 case '+':
-                    result = leftOperand + rightOperand;
+                    result = left+ right;
                     break;
                 case '-':
-                    result = leftOperand - rightOperand;
+                    result = left - right;
                     break;
                 case '*':
-                    result = leftOperand * rightOperand;
+                    result = left * right;
                     break;
                 case '/':
-                    if (rightOperand === 0) {
+                    if (right === 0) {
                         alert("It's over 9000!");
                         console.error("It's over 9000!");
                         return;
                     }
-                    result = leftOperand / rightOperand;
+                    result = left / right;
                     break;
                 case '%':
-                    if (rightOperand === 0) {
+                    if (right === 0) {
                         alert("It's over 9000!");
                         console.error("It's over 9000!");
                         return;
                     }
-                    result = leftOperand % rightOperand;
+                    result = left % right;
                     break;
-                default:
-                    alert('Error :(');
-                    console.error('Error :(');
-                    return;
             }
             alert('Result: ' + result);
             console.log('Result: ' + result);;
-        });
+        };
         setInterval(function() {
             alert('Please, use me...');
         }, 30000);
