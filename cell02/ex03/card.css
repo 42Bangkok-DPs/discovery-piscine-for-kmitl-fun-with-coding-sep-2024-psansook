@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.profile-card {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ccc;
+}
+.login {
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    cursor: pointer;
+}
+.contact-button {
+    background-color: black;
+    color: wheat;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+.contact-button:hover {
+    background-color: #333;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+}
