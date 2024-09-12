@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+}
+img {
+    max-width: 45%;
+    height: auto;
+    margin: 20px;
+}
+.content-section {
+    margin: 20px;
+}
+.content-section p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.content-image-split {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    display: block;
+    margin: auto;
+}
+.image-split {
+    width: 100%;
+    max-width: 600px;
+    height: 200px; 
+    background-image: url("https://i.natgeofe.com/k/ad9b542e-c4a0-4d0b-9147-da17121b4c98/MOmeow1_square.png"); 
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+.image-split.top {
+    background-position: top; 
+    clip-path: inset(0 0 5% 0); 
+}
+.image-split.bottom {
+    background-position: bottom; 
+    clip-path: inset(15% 0 0 0); 
+}
+.split-text {
+    font-size: 16px;
+    margin: 20px;
+    text-align: center;
+}
+.content-image-full {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
