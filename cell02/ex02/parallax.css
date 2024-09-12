@@ -4,56 +4,30 @@
     box-sizing: border-box;
 }
 body {
-    background-color: lightgoldenrodyellow;
-    padding: 20px;
+    height: 100%;
+    margin: 0;
 }
-img {
-    max-width: 45%;
-    height: auto;
-    margin: 20px;
-}
-.content-section {
-    margin: 20px;
-}
-.content-section p {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    text-align: center;
-}
-.content-image-split {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; 
-    display: block;
-    margin: auto;
-}
-.image-split {
-    width: 100%;
-    max-width: 600px;
-    height: 200px; 
-    background-image: url("https://i.natgeofe.com/k/ad9b542e-c4a0-4d0b-9147-da17121b4c98/MOmeow1_square.png"); 
-    background-size: cover;
+.parallax {
+    height: 900px;
+    background-attachment: fixed;
     background-position: center;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
-.image-split.top {
-    background-position: top; 
-    clip-path: inset(0 0 5% 0); 
+.img1 {
+    background-image: url("https://1.bp.blogspot.com/-MopOxGlGhHs/Tsc6VYVU-4I/AAAAAAAABb0/Q0qWdT5h3dM/s1600/cat-wallpapers-Desktop-HD-photo-images-12.jpg");
 }
-.image-split.bottom {
-    background-position: bottom; 
-    clip-path: inset(15% 0 0 0); 
+.img2 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/df/Bengal_Cat_(Fia).jpg");
 }
-.split-text {
-    font-size: 16px;
-    margin: 20px;
+.parallax-text {
     text-align: center;
 }
-.content-image-full {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin: auto;
+.content {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgb(0, 0, 0);
 }
