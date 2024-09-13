@@ -1,0 +1,19 @@
+body, html { 
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.container {
+    text-align: left;
+    padding: 20px;
+}
+button {
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #bfbfbf;
+}
