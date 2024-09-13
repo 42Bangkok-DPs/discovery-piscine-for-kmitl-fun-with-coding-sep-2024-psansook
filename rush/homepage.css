@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: monospace;
+    background-color: #f4c2f3;
+}
+.takonoop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    height: 60vh; /* Half of the viewport height */
+}
+.takonoop-content h1 {
+    font-size: 50px;
+    margin-bottom: 50;
+}
+.takonoop-content p {
+    font-size: 20px;
+}
+.profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* The remaining half of the viewport height */
+}
+.profile {
+    margin: 0 100px;
+    text-decoration: none;
+}
+.profile-content {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+.profile-content h2 {
+    margin: 0;
+    font-size: 20px;
+}
+.profile:hover .profile-content {
+    background-color: #333;
+}
