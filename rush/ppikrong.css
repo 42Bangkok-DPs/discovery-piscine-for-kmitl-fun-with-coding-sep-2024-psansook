@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f4c2f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    font-family: monospace;
+}
+nav { 
+    position: fixed;
+    top: 0;
+    background-color: skyblue;
+    height: 90px;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10%;
+    height: 100%;
+    font-family: monospace;
+}
+.logo {
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+    font-family: monospace;
+}
+nav h1 {
+    width: 40%;
+    font-size: 4em;
+    font-family: monospace;
+    color: aliceblue;
+    justify-self: left;
+}
+nav ul{
+    padding: 0;
+    width: 60%;
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+}
+nav ul li {
+    font-size: 2em;
+    margin-right: 3vw;
+}
+nav a {
+    text-decoration: none;
+}
+#home {
+    margin-top:4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+#home > * {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 4rem;
+}
+.profile-picture { 
+    z-index: -1;
+    width: 40vmin;
+    height: 40vmin;
+    border-radius: 5em;
+    margin-top: 50px;
+}
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    margin: 0;
+    padding: 30px 10%;
+    height: 100vh;
+}
+#about > * {
+    width: 300px;
+    height: 300px;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 30px 10%;
+    height: 100vh;  
+}
+#about p, #contact p{
+    font-size: 1.5em;
+    font-family: monospace;
+}
+#p-info, #skills, #exp , .container-contact{
+    padding: 20px;
+    margin: 0;
+    border: 0.25px solid grey;
+    border-radius: 1rem;
+    background-color: white;
+}
